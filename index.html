@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/bag.png" type="image/x-icon" />
+  <title>Modelo de Site - Destaques com Carrossel</title>
+</head>
+<body>
+  <header>
+    <div class="topo">
+      <div class="topoIn">
+        <div class="logomarca">
+          <div class="logoo">
+            <abbr title="Seu logotipo ou sua marca">
+             <a href="index.html"><img src="img/logo.png" alt="SeuLogo" width="100" height="45" /></a> 
+            </abbr>
+          </div>
+        </div>
+        <nav>
+          <div class="menu">
+            <div class="menuDesktop">
+              <ul>
+                <li><a href="#brasileiros">Brasileiros</a></li>
+                <li><a href="#europeus">Europeus</a></li>
+                <li><a href="#retro">Retro</a></li>
+                <li><a href="#outras">Outras</a></li>
+              </ul>
+            </div>
+            <section class="menuMobile">
+              <div class="iconMenu" id="botaoMobile">
+                <p>&#9776;</p>
+              </div>
+              <div id="menuSusp" class="menuSuspenso">
+                <ul>
+                  <li><a href="#brasileiros">Brasileiros</a></li>
+                  <li><a href="#europeus">Europeus</a></li>
+                  <li><a href="#outras">Outras</a></li>
+                  <li><a href="#retro">Retro</a></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <section>
+      <div class="banner">
+        <div class="bannerIn">
+          <div class="bannerEsquerda">
+            <div class="fraseEfeito">Vista as Cores da Sua Paixão</div>
+            <div class="frase2">Orgulho em cada camisa</div>
+            <div class="botao">
+              <button onclick="location.href='#brasileiros'">Ver Catálogos</button>
+            </div>
+          </div>
+          <div class="bannerDireita">
+            <img src="img/logo2.png" alt="animate" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <section class="ctt">
+    <div class="whats">
+      <a href="https://wa.me/15996128644?text=Olá, gostaria de saber mais sobre as camisas disponíveis." target="_blank">
+        <img src="img/whatsapp-logo.png" alt="WhatsApp" />
+      </a>
+    </div>
+  </section>
+
+  <main>
+    <!-- Seção Brasileiros -->
+    <section id="brasileiros">
+      <h2 class="outrosProdutos">Times Brasileiros</h2>
+      <div class="carousel-container">
+        <button class="btn-scroll btn-left" data-target="brasileiros">&#10094;</button>
+        <div class="carousel" id="carousel-brasileiros">
+          <div class="card"><img src="BRASIL/palmeiras.png" alt="Palmeiras" /><a href="produto.html?id=palmeiras"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/Sp.jpg" alt="São Paulo" /><a href="produto.html?id=SP"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/SCCP.jpg" alt="Corinthians" /><a href="produto.html?id=SCCP"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/santos.jpeg" alt="Santos" /><a href="produto.html?id=SANTOS"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/flamengo.jpeg" alt="Flamengo" /><a href="produto.html?id=FLA"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/vasco.jpg" alt="Vasco" /><a href="produto.html?id=VASCO"><button>Ver Produto</button></a></div>
+        </div>
+        <button class="btn-scroll btn-right" data-target="brasileiros">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Seção Europeus -->
+    <section id="europeus">
+      <h2 class="outrosProdutos">Times Europeus</h2>
+      <div class="carousel-container">
+        <button class="btn-scroll btn-left" data-target="europeus">&#10094;</button>
+        <div class="carousel" id="carousel-europeus">
+          <div class="card"><img src="EUROPA/barcelona.jpeg" alt="Barcelona" /><a href="produto.html?id=BARCELONA"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="EUROPA/realMadrid.jpg" alt="Real Madrid" /><a href="produto.html?id=REAL"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="EUROPA/city.jpeg" alt="Manchester City" /><a href="produto.html?id=CITY"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="EUROPA/bayern.jpeg" alt="Bayern" /><a href="produto.html?id=BAYERN"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="EUROPA/chelsea.jpg" alt="chelsea" /><a href="produto.html?id=CHELSEA"><button>Ver Produto</button></a></div>
+        </div>
+        <button class="btn-scroll btn-right" data-target="europeus">&#10095;</button>
+      </div>
+    </section>
+
+     <!-- Seção Retro -->
+    <section id="retro">
+      <h2 class="outrosProdutos">Modelos Retrô</h2>
+      <div class="carousel-container">
+        <button class="btn-scroll btn-left" data-target="retro">&#10094;</button>
+        <div class="carousel" id="carousel-retro">
+          <div class="card"><img src="RETRO/RetroMilan.jpg" alt="Milan" /><a href="produto.html?id=MILAN"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="RETRO/retroPalmeiras.jpg" alt="Palmeiras Retrô" /><a href="produto.html?id=palmeiras2"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="RETRO/retroCorinthians.jpeg" alt="Corinthians Retrô" /><a href="produto.html?id=SCCP2"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="RETRO/retroHolanda.jpg" alt="Holanda" /><a href="produto.html?id=HOLANDA"><button>Ver Produto</button></a></div>
+        </div>
+        <button class="btn-scroll btn-right" data-target="retro">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Seção Outras -->
+    <section id="outras">
+      <h2 class="outrosProdutos">Outras</h2>
+      <div class="carousel-container">
+        <button class="btn-scroll btn-left" data-target="outras">&#10094;</button>
+        <div class="carousel" id="carousel-outras">
+          <div class="card"><img src="OUTROS/boca.jpeg" alt="Boca" /><a href="produto.html?id=BOCA"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="OUTROS/river.jpg" alt="River" /><a href="produto.html?id=RIVER"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="OUTROS/penarol.jpeg" alt="Peñarol" /><a href="produto.html?id=PENAROL"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="OUTROS/mexico.jpg" alt="México" /><a href="produto.html?id=MEXICO"><button>Ver Produto</button></a></div>
+        </div>
+        <button class="btn-scroll btn-right" data-target="outras">&#10095;</button>
+      </div>
+    </section>
+
+   
+  </main>
+
+  <!-- Card flutuante fixo -->
+  <div class="floating-card">
+    <p><strong>Não encontrou sua camisa?</strong><br>Consulte nosso estoque no WhatsApp.</p>
+    <a href="https://wa.me/15996128644?text=Olá, gostaria de saber mais sobre as camisas disponíveis." target="_blank">Fale Conosco</a>
+  </div>
+
+  <footer>
+    <p>&copy; Desenvolvido por OFF11</p>
+  </footer>
+
+  <script>
+    // Script para rolar o carrossel ao clicar nos botões
+    document.querySelectorAll('.btn-scroll').forEach(button => {
+      button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        const carousel = document.getElementById('carousel-' + targetId);
+        const scrollAmount = carousel.offsetWidth * 0.7; // rola 70% da largura visível
+        if (button.classList.contains('btn-left')) {
+          carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        } else {
+          carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Código para abrir/fechar menu mobile
+    const botaoMobile = document.getElementById('botaoMobile');
+    const menuSusp = document.getElementById('menuSusp');
+    if (botaoMobile && menuSusp) {
+      botaoMobile.addEventListener('click', () => {
+        if (menuSusp.style.display === 'block') {
+          menuSusp.style.display = 'none';
+        } else {
+          menuSusp.style.display = 'block';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

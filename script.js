@@ -1,12 +1,16 @@
-let menuSusp = document.getElementById("menuSusp");
-let botaoMobile = document.getElementById("botaoMobile");
+ document.addEventListener("DOMContentLoaded", function () {
+    const botaoMobile = document.getElementById("botaoMobile");
+    const menuSusp = document.getElementById("menuSusp");
 
-menuSusp.style.display = "none";
+    // Garante que o menu começa fechado
+    menuSusp.style.display = "none";
 
-botaoMobile.addEventListener("click", (event) =>{
-    if(menuSusp.style.display == "none"){
+    // Abre e fecha com clique
+    botaoMobile.addEventListener("click", () => {
+      if (menuSusp.style.display === "none" || menuSusp.style.display === "") {
         menuSusp.style.display = "flex";
-    } else {
+      } else {
         menuSusp.style.display = "none";
-    }
-})
+      }
+    });
+  });

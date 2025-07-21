@@ -120,6 +120,7 @@ function atualizarPainelFavoritos() {
   });
 
   totalSpan.textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
+  gerarLinkWhatsAppFinal();
 }
 
 function removerFavorito(id, tamanho) {
@@ -128,6 +129,31 @@ function removerFavorito(id, tamanho) {
   atualizarPainelFavoritos();
   atualizarFavoritarBtn();
 }
+
+function gerarLinkWhatsAppFinal() {
+    let mensagem = "Olá! Tenho interesse nas seguintes camisas:\n\n";
+    let total = 0;
+  
+    favoritos.forEach((fav, i) => {
+      const p = produtos[fav.idProduto];
+      if (!p) return;
+  
+      const precoNum = parseFloat(p.preco.replace("R$", "").replace(",", "."));
+      total += precoNum;
+  
+      mensagem += `${i + 1}. ${p.nome}\n`;
+      mensagem += `   • Tamanho: ${fav.tamanho}\n`;
+      mensagem += `   • Preço: ${p.preco}\n\n`;
+    });
+  
+    mensagem += `🧾 Total da compra: R$ ${total.toFixed(2).replace(".", ",")}\n\n`;
+    mensagem += "Aguardo o atendimento. Obrigado!";
+  
+    const numero = "15996128644"; // <- seu número com DDD
+    const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+  
+    document.getElementById("whatsLinkFinal").href = link;
+  }
 
 selectTamanho.addEventListener("change", atualizarFavoritarBtn);
 

@@ -245,6 +245,30 @@
         width: 100%;
       }
     }
+
+select {
+  appearance: none; /* remove o estilo padrão do navegador */
+  background-color: #fff;
+  border: 2px solid #28207B;
+  color: #28207B;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 14px;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #0e0a39;
+  background-color: #f4f4f4;
+}
+
+
   </style>
 </head>
 
@@ -270,7 +294,7 @@
         <p id="descricaoProduto"></p>
         <div class="preco" id="precoProduto"></div>
 
-        <label for="selectTamanho">Tamanho:</label> <br>
+        <label for="selectTamanho">Tamanho:</label> 
         <select id="selectTamanho">
           <option value="P">P</option>
           <option value="M" selected>M</option>

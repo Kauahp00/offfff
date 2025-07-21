@@ -246,7 +246,8 @@
       }
     }
 
-select {
+
+    select {
   appearance: none; /* remove o estilo padrão do navegador */
   background-color: #fff;
   border: 2px solid #28207B;
@@ -268,6 +269,16 @@ select:hover {
   background-color: #f4f4f4;
 }
 
+.logoo {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.logoo a {
+  display: inline-block;
+}
+
 
   </style>
 </head>
@@ -277,7 +288,9 @@ select:hover {
     <div class="topo">
       <div class="topoIn">
         <div class="logoo">
-          <img src="img/logo2.png" alt="OFF11 Logo" />
+          <a href="index.html">
+            <img src="img/logo2.png" alt="SeuLogo" width="100" height="45" />
+          </a>
         </div>
         <div id="btnFavoritos" onclick="abrirFavoritos()">
           FAVORITOS ❤️
@@ -294,7 +307,7 @@ select:hover {
         <p id="descricaoProduto"></p>
         <div class="preco" id="precoProduto"></div>
 
-        <label for="selectTamanho">Tamanho:</label> 
+        <label for="selectTamanho">Tamanho:</label>
         <select id="selectTamanho">
           <option value="P">P</option>
           <option value="M" selected>M</option>
@@ -304,7 +317,7 @@ select:hover {
         <div style="margin-top: 10px;">
           <button class="btn" onclick="history.back()">← Voltar</button>
           <button class="btn" id="btnFavoritar" onclick="adicionarFavorito()">🤍 Favoritar</button><br><br>
-          <a id="whatsLink" target="_blank"><button class="btn">💬 Comprar no WhatsApp</button></a>
+          <a id="whatsLink" target="_blank"><button class="btn">🛒Comprar no WhatsApp</button></a>
         </div>
       </div>
     </div>
@@ -319,7 +332,10 @@ select:hover {
     <h2>Favoritos</h2>
     <div id="listaFavoritos"></div>
     <hr>
-    <div style="font-weight: bold; margin-top: 10px;">Total: <span id="totalFavoritos">R$ 0,00</span></div>
+    <div style="font-weight: bold; margin-top: 10px;">Total: <span id="totalFavoritos">R$ 0,00</span></div> <br> 
+    <a id="whatsLinkFinal" target="_blank">
+      <button class="btn">🛒 Comprar no WhatsApp</button>
+    </a>
     <button class="btn" onclick="fecharFavoritos()" style="margin-top: 20px;">Fechar</button>
   </div>
 

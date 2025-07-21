@@ -155,7 +155,12 @@ function gerarLinkWhatsAppFinal() {
     document.getElementById("whatsLinkFinal").href = link;
   }
 
-selectTamanho.addEventListener("change", atualizarFavoritarBtn);
+ selectTamanho.addEventListener("change", () => {
+    atualizarFavoritarBtn();
+    whatsEl.href = `https://wa.me/15996128644?text=${encodeURIComponent(
+      `Olá! Tenho interesse na camisa "${produto.nome}", no valor de ${produto.preco}.\n\nTamanho desejado: ${selectTamanho.value}\n\nPoderia me passar mais informações sobre pagamento e entrega?\nDesde já, agradeço!`
+    )}`;
+  });
 
 if (produto) {
   imgEl.src = produto.imagem;

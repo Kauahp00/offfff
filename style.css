@@ -54,22 +54,50 @@ a {
 }
 
 #menuSusp {
-    display: none;
-    transition: 0.3s;
+  display: none; /* começa escondido */
+  transition: 0.3s;
+  position: absolute; /* para posicionar sobre o conteúdo */
+  right: 27px;
+  background-color: #fff;
+  width: 150px;
+  user-select: none;
+  flex-direction: column; /* para flex exibir os itens verticalmente */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  z-index: 1000;
 }
 
 .menuSuspenso ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 150px;
-    right: 27px;
-    background-color: #ffffff;
-    user-select: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
+.menuSuspenso ul li a {
+  display: block;
+  padding: 12px 16px;
+  color: #28207B;
+  text-decoration: none;
+}
+
+.menuSuspenso ul li a:hover {
+  background-color: #28207B;
+  color: white;
+}
+
+/* Menu Mobile visível só em telas pequenas */
 .menuMobile {
-    display: none;
+  display: none; /* por padrão desktop não mostra */
+}
+
+/* Mostrar menuMobile só em telas menores */
+@media (max-width: 768px) {
+  .menuMobile {
+    display: block;
+    position: relative;
+  }
 }
 
 .menu ul, .menu li {

@@ -44,6 +44,69 @@ const produtos = {
       imagem: "BRASIL/vasco.jpg",
       sugestoes: ["FLA", "SCCP", "SP"]
     },
+    CUIABA: {
+      nome: "Camisa Cuiabá 2024",
+      descricao: "Camisa verde e amarela do Dourado, edição especial.",
+      preco: "R$ 119,99",
+      imagem: "BRASIL/cuiaba.jpg",
+      sugestoes: ["FORTALEZA", "BAHIA", "INTER"]
+    },
+    FORTALEZA: {
+      nome: "Camisa Fortaleza 2024",
+      descricao: "Modelo tricolor do Leão do Pici com tecnologia dryfit.",
+      preco: "R$ 119,99",
+      imagem: "BRASIL/fortaleza.jpg",
+      sugestoes: ["CUIABA", "BAHIA", "CRUZEIRO"]
+    },
+    BAHIA: {
+      nome: "Camisa Bahia 2024",
+      descricao: "Tricolor baiano com detalhes em azul, branco e vermelho.",
+      preco: "R$ 119,99",
+      imagem: "BRASIL/bahia.jpg",
+      sugestoes: ["FORTALEZA", "GREMI", "INTER"]
+    },
+    INTER: {
+      nome: "Camisa Internacional 2024",
+      descricao: "Vermelha com listras verticais finas em branco.",
+      preco: "R$ 119,99",
+      imagem: "BRASIL/internacional.jpg",
+      sugestoes: ["GREMI", "ATLETICO-MG", "CRUZEIRO"]
+    },
+    GREMIO: {
+      nome: "Camisa Grêmio 2024",
+      descricao: "Azul, preta e branca com detalhes em listras horizontais.",
+      preco: "R$ 119,99",
+      imagem: "BRASIL/gremio.jpg",
+      sugestoes: ["INTER", "FLUMINENSE", "ATLETICO-MG"]
+    },
+    CRUZEIRO: {
+      nome: "Camisa Cruzeiro 2024",
+      descricao: "Azul celeste com detalhes em branco, modelo premium.",
+      preco: "R$ 119,99",
+      imagem: "BRASIL/cruzeiro.jpg",
+      sugestoes: ["ATLETICO-MG", "INTER", "FORTALEZA"]
+    },
+    ATLETICOMG: {
+      nome: "Camisa Atlético Mineiro 2024",
+      descricao: "Listrada em preto e branco com escudo bordado.",
+      preco: "R$ 119,99",
+      imagem: "BRASIL/atletico-mg.jpg",
+      sugestoes: ["CRUZEIRO", "INTER", "FLUMINENSE"]
+    },
+    FLUMINENSE: {
+      nome: "Camisa Fluminense 2024",
+      descricao: "Tricolor grená, verde e branca com gola polo.",
+      preco: "R$ 119,99",
+      imagem: "BRASIL/fluminense.jpg",
+      sugestoes: ["FLA", "BOTAFOGO", "GREMI"]
+    },
+    BOTAFOGO: {
+      nome: "Camisa Botafogo 2024",
+      descricao: "Listrada em preto e branco com detalhes em dourado.",
+      preco: "R$ 119,99",
+      imagem: "BRASIL/botafogo.jpg",
+      sugestoes: ["FLUMINENSE", "FLA", "VASCO"]
+    },
   
     // EUROPEUS
     BARCELONA: {
@@ -81,9 +144,44 @@ const produtos = {
       imagem: "EUROPA/chelsea.jpg",
       sugestoes: ["CITY", "REAL", "BARCELONA"]
     },
+    PSG: {
+      nome: "Camisa PSG 2024",
+      descricao: "Azul marinho com detalhes em vermelho e branco.",
+      preco: "R$ 119,99",
+      imagem: "EUROPA/psg.jpg",
+      sugestoes: ["MILAN", "INTER-MILAO", "BARCELONA"]
+    },
+    MILAN: {
+      nome: "Camisa Milan 2024",
+      descricao: "Listrada em vermelho e preto com detalhes em dourado.",
+      preco: "R$ 119,99",
+      imagem: "EUROPA/milan.jpg",
+      sugestoes: ["INTER-MILAO", "JUVENTUS", "PSG"]
+    },
+    INTERMILAO: {
+      nome: "Camisa Inter de Milão 2024",
+      descricao: "Listrada em azul e preto com tecnologia dryfit.",
+      preco: "R$ 119,99",
+      imagem: "EUROPA/inter-milao.jpg",
+      sugestoes: ["MILAN", "JUVENTUS", "PSG"]
+    },
+    MANUTD: {
+      nome: "Camisa Manchester United 2024",
+      descricao: "Vermelha com detalhes em branco e dourado.",
+      preco: "R$ 119,99",
+      imagem: "EUROPA/manchester-united.jpg",
+      sugestoes: ["CITY", "CHELSEA", "ARSENAL"]
+    },
+    ARSENAL: {
+      nome: "Camisa Arsenal 2024",
+      descricao: "Vermelha com mangas brancas e detalhes em dourado.",
+      preco: "R$ 119,99",
+      imagem: "EUROPA/arsenal.jpg",
+      sugestoes: ["MAN-UTD", "CHELSEA", "CITY"]
+    },
   
     // RETRÔ
-    MILAN: {
+    "Milan": {
       nome: "Camisa Retrô Milan",
       descricao: "Camisa histórica do Milan em edição retrô.",
       preco: "R$ 159,99",
@@ -141,5 +239,4 @@ const produtos = {
       imagem: "OUTROS/mexico.jpg",
       sugestoes: ["BOCA", "RIVER", "PENAROL"]
     }
-  };
-  
+};

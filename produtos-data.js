@@ -48,7 +48,7 @@ const produtos = {
       nome: "Camisa Cuiabá 2025",
       descricao: "Camisa verde e amarela do Dourado, edição especial.",
       preco: "R$ 119,99",
-      imagem: "BRASIL/cuiaba.jpg",
+      imagem: "BRASIL/cuiaba.png",
       sugestoes: ["FORTALEZA", "BAHIA", "INTER"]
     },
     FORTALEZA: {
@@ -63,34 +63,34 @@ const produtos = {
       descricao: "Tricolor baiano com detalhes em azul, branco e vermelho.",
       preco: "R$ 119,99",
       imagem: "BRASIL/bahia.jpg",
-      sugestoes: ["FORTALEZA", "GREMIO", "INTER"]
+      sugestoes: ["FORTALEZA", "GREMI", "INTER"]
     },
     INTER: {
       nome: "Camisa Internacional 2025",
       descricao: "Vermelha com listras verticais finas em branco.",
       preco: "R$ 119,99",
-      imagem: "BRASIL/internacional.jpg",
-      sugestoes: ["GREMIO", "ATLETICO-MG", "CRUZEIRO"]
+      imagem: "BRASIL/inter.jpg",
+      sugestoes: ["GREMI", "ATLETICO-MG", "CRUZEIRO"]
     },
     GREMI: {
       nome: "Camisa Grêmio 2025",
       descricao: "Azul, preta e branca com detalhes em listras horizontais.",
       preco: "R$ 119,99",
-      imagem: "BRASIL/gremio.jpg",
+      imagem: "BRASIL/gremio.jpeg",
       sugestoes: ["INTER", "FLUMINENSE", "ATLETICO-MG"]
     },
     CRUZEIRO: {
       nome: "Camisa Cruzeiro 2025",
       descricao: "Azul celeste com detalhes em branco, modelo premium.",
       preco: "R$ 119,99",
-      imagem: "BRASIL/cruzeiro.jpg",
+      imagem: "BRASIL/cruzeiro.jpeg",
       sugestoes: ["ATLETICO-MG", "INTER", "FORTALEZA"]
     },
     "ATLETICO-MG": {
       nome: "Camisa Atlético Mineiro 2025",
       descricao: "Listrada em preto e branco com escudo bordado.",
       preco: "R$ 119,99",
-      imagem: "BRASIL/atletico-mg.jpg",
+      imagem: "BRASIL/atletico MG.jpg",
       sugestoes: ["CRUZEIRO", "INTER", "FLUMINENSE"]
     },
     FLUMINENSE: {
@@ -149,68 +149,68 @@ const produtos = {
       descricao: "Azul marinho com detalhes em vermelho e branco.",
       preco: "R$ 119,99",
       imagem: "EUROPA/psg.jpg",
-      sugestoes: ["MILAN", "INTER-MILAN", "BARCELONA"]
+      sugestoes: ["MILAN", "INTER-MILAO", "BARCELONA"]
     },
     MILAN: {
       nome: "Camisa Milan 2025",
       descricao: "Listrada em vermelho e preto com detalhes em dourado.",
       preco: "R$ 119,99",
-      imagem: "EUROPA/milan.jpg",
-      sugestoes: ["INTER-MILAN", "MAN-UTD", "PSG"]
+      imagem: "EUROPA/milan.jpeg",
+      sugestoes: ["INTER-MILAO", "MAN-UTD", "PSG"]
     },
-    "INTER-MILAN": {
+    "INTER-MILAO": {
       nome: "Camisa Inter de Milão 2025",
       descricao: "Listrada em azul e preto com tecnologia dryfit.",
       preco: "R$ 119,99",
-      imagem: "EUROPA/inter-milao.jpg",
+      imagem: "EUROPA/inter de milao.jpeg",
       sugestoes: ["MILAN", "MAN-UTD", "PSG"]
     },
     "MAN-UTD": {
       nome: "Camisa Manchester United 2025",
       descricao: "Vermelha com detalhes em branco e dourado.",
       preco: "R$ 119,99",
-      imagem: "EUROPA/manchester-united.jpg",
+      imagem: "EUROPA/united.jpg",
       sugestoes: ["CITY", "CHELSEA", "ARSENAL"]
     },
     ARSENAL: {
       nome: "Camisa Arsenal 2025",
       descricao: "Vermelha com mangas brancas e detalhes em dourado.",
       preco: "R$ 119,99",
-      imagem: "EUROPA/arsenal.jpg",
+      imagem: "EUROPA/arsenal.jpeg",
       sugestoes: ["MAN-UTD", "CHELSEA", "CITY"]
     },
 
-    // RETRÔ
-    "MILAN-RETRO": {
+    // RETRÔ (mantive os mesmos do exemplo anterior)
+    MILAN: {
       nome: "Camisa Retrô Milan",
       descricao: "Camisa histórica do Milan em edição retrô.",
       preco: "R$ 159,99",
       imagem: "RETRO/RetroMilan.jpg",
-      sugestoes: ["PALMEIRAS-RETRO", "CORINTHIANS-RETRO", "HOLANDA-RETRO"]
+      sugestoes: ["palmeiras2", "SCCP2", "HOLANDA"]
     },
-    "PALMEIRAS-RETRO": {
+    palmeiras2: {
       nome: "Camisa Retrô Palmeiras",
       descricao: "Camisa vintage do Verdão, edição especial.",
       preco: "R$ 159,99",
       imagem: "RETRO/retroPalmeiras.jpg",
-      sugestoes: ["MILAN-RETRO", "CORINTHIANS-RETRO", "HOLANDA-RETRO"]
+      sugestoes: ["Milan", "SCCP2", "HOLANDA"]
     },
-    "CORINTHIANS-RETRO": {
+    SCCP2: {
       nome: "Camisa Retrô Corinthians",
       descricao: "Modelo retrô com gola polo e escudo antigo.",
       preco: "R$ 159,99",
       imagem: "RETRO/retroCorinthians.jpeg",
-      sugestoes: ["MILAN-RETRO", "PALMEIRAS-RETRO", "HOLANDA-RETRO"]
+      sugestoes: ["Milan", "palmeiras2", "HOLANDA"]
     },
-    "HOLANDA-RETRO": {
+    HOLANDA: {
       nome: "Camisa Retrô Holanda",
       descricao: "Icônica camisa laranja da seleção holandesa.",
       preco: "R$ 159,99",
       imagem: "RETRO/retroHolanda.jpg",
-      sugestoes: ["MILAN-RETRO", "CORINTHIANS-RETRO", "PALMEIRAS-RETRO"]
+      sugestoes: ["Milan", "SCCP2", "palmeiras2"]
     },
 
-    // OUTROS
+    // OUTROS (mantive os mesmos do exemplo anterior)
     BOCA: {
       nome: "Camisa Boca Juniors",
       descricao: "Azul e amarela retrô com gola especial.",

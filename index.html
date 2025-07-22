@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="img/bag.png" type="image/x-icon" />
+  
   <title>Modelo de Site - Destaques com Carrossel</title>
 </head>
 <body>
@@ -65,12 +66,17 @@
   </header>
 
   <section class="ctt">
+    <div id="btnFlutuanteCarrinho" onclick="abrirFavoritos()">
+        <img src="carrinho-de-compras.png" alt="carrinho" width="45" height="45"/>
+    </div>
     <div class="whats">
       <a href="https://wa.me/15996128644?text=Olá, gostaria de saber mais sobre as camisas disponíveis." target="_blank">
         <img src="img/whatsapp-logo.png" alt="WhatsApp" />
       </a>
+
     </div>
   </section>
+
 
   <main>
     <!-- Seção Brasileiros -->
@@ -85,6 +91,15 @@
           <div class="card"><img src="BRASIL/santos.jpeg" alt="Santos" /><a href="produto.html?id=SANTOS"><button>Ver Produto</button></a></div>
           <div class="card"><img src="BRASIL/flamengo.jpeg" alt="Flamengo" /><a href="produto.html?id=FLA"><button>Ver Produto</button></a></div>
           <div class="card"><img src="BRASIL/vasco.jpg" alt="Vasco" /><a href="produto.html?id=VASCO"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/cuiaba.jpg" alt="Cuiabá" /><a href="produto.html?id=CUIABA"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/fortaleza.jpg" alt="Fortaleza" /><a href="produto.html?id=FORTALEZA"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/bahia.jpg" alt="Bahia" /><a href="produto.html?id=BAHIA"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/internacional.jpg" alt="Internacional" /><a href="produto.html?id=INTER"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/gremio.jpg" alt="Grêmio" /><a href="produto.html?id=GREMI"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/cruzeiro.jpg" alt="Cruzeiro" /><a href="produto.html?id=CRUZEIRO"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/atletico-mg.jpg" alt="Atlético MG" /><a href="produto.html?id=ATLETICO-MG"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/fluminense.jpg" alt="Fluminense" /><a href="produto.html?id=FLUMINENSE"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="BRASIL/botafogo.jpg" alt="Botafogo" /><a href="produto.html?id=BOTAFOGO"><button>Ver Produto</button></a></div>
         </div>
         <button class="btn-scroll btn-right" data-target="brasileiros">&#10095;</button>
       </div>
@@ -101,6 +116,11 @@
           <div class="card"><img src="EUROPA/city.jpeg" alt="Manchester City" /><a href="produto.html?id=CITY"><button>Ver Produto</button></a></div>
           <div class="card"><img src="EUROPA/bayern.jpeg" alt="Bayern" /><a href="produto.html?id=BAYERN"><button>Ver Produto</button></a></div>
           <div class="card"><img src="EUROPA/chelsea.jpg" alt="chelsea" /><a href="produto.html?id=CHELSEA"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="EUROPA/psg.jpg" alt="PSG" /><a href="produto.html?id=PSG"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="EUROPA/milan.jpg" alt="Milan" /><a href="produto.html?id=MILAN"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="EUROPA/inter-milao.jpg" alt="Inter de Milão" /><a href="produto.html?id=INTER-MILAO"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="EUROPA/manchester-united.jpg" alt="Manchester United" /><a href="produto.html?id=MAN-UTD"><button>Ver Produto</button></a></div>
+          <div class="card"><img src="EUROPA/arsenal.jpg" alt="Arsenal" /><a href="produto.html?id=ARSENAL"><button>Ver Produto</button></a></div>
         </div>
         <button class="btn-scroll btn-right" data-target="europeus">&#10095;</button>
       </div>
@@ -149,6 +169,30 @@
     <p>&copy; Desenvolvido por OFF11</p>
   </footer>
 
+  <div id="painelFavoritos">
+    <h2>Carrinho</h2>
+    <div id="listaFavoritos"></div>
+    <hr>
+  
+    <!-- Campo para cupom -->
+    <div style="margin-bottom: 15px;">
+      <label for="inputCupom" style="font-weight: 600;">Código do Cupom:</label><br/>
+      <input type="text" id="inputCupom" placeholder="Digite seu cupom" style="padding: 8px; width: 60%; border: 1px solid #ccc; border-radius: 6px;" />
+      <button class="btn" id="btnAplicarCupom" style="padding: 9px 16px; margin-left: 10px;">Aplicar</button>
+      <div id="msgCupom" style="color: red; margin-top: 6px; font-size: 14px;"></div>
+    </div>
+  
+    <div style="font-weight: bold; margin-top: 10px;">
+      Total: <span id="totalFavoritos">R$ 0,00</span>
+    </div>
+    <br> 
+    <a id="whatsLinkFinal" target="_blank">
+      <button class="btn">🛒 Comprar no WhatsApp</button>
+    </a>
+    <button class="btn" onclick="fecharFavoritos()" style="margin-top: 20px;">Fechar</button>
+  </div>
+  
+
   <script>
     // Script para rolar o carrossel ao clicar nos botões
     document.querySelectorAll('.btn-scroll').forEach(button => {
@@ -177,5 +221,10 @@
       });
     }
   </script>
+
+<script src="produtos-data.js"></script>
+<script src="produto-script.js"></script>
+  
+  
 </body>
 </html>

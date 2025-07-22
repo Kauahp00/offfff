@@ -633,7 +633,7 @@ footer a:hover {
 
   #btnFlutuanteCarrinho {
     position: fixed;
-    bottom: 100px; /* ajusta para ficar acima do WhatsApp */
+    bottom: 55px; /* ajusta para ficar acima do WhatsApp */
     right: 33px;
     cursor: pointer;
     z-index: 9999;

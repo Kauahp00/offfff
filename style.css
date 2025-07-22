@@ -54,50 +54,22 @@ a {
 }
 
 #menuSusp {
-  display: none; /* começa escondido */
-  transition: 0.3s;
-  position: absolute; /* para posicionar sobre o conteúdo */
-  right: 27px;
-  background-color: #fff;
-  width: 150px;
-  user-select: none;
-  flex-direction: column; /* para flex exibir os itens verticalmente */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  border-radius: 8px;
-  z-index: 1000;
+    display: none;
+    transition: 0.3s;
 }
 
 .menuSuspenso ul {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    right: 27px;
+    background-color: #ffffff;
+    user-select: none;
 }
 
-.menuSuspenso ul li a {
-  display: block;
-  padding: 12px 16px;
-  color: #28207B;
-  text-decoration: none;
-}
-
-.menuSuspenso ul li a:hover {
-  background-color: #28207B;
-  color: white;
-}
-
-/* Menu Mobile visível só em telas pequenas */
 .menuMobile {
-  display: none; /* por padrão desktop não mostra */
-}
-
-/* Mostrar menuMobile só em telas menores */
-@media (max-width: 768px) {
-  .menuMobile {
-    display: block;
-    position: relative;
-  }
+    display: none;
 }
 
 .menu ul, .menu li {
@@ -658,3 +630,57 @@ footer a:hover {
     }
   }
   
+
+  #btnFlutuanteCarrinho {
+    position: fixed;
+    bottom: 90px; /* ajusta para ficar acima do WhatsApp */
+    right: 33px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.2s ease;
+    width: 24px;  /* tamanho do container do ícone */
+    height: 24px;
+  }
+  
+  #btnFlutuanteCarrinho:hover {
+    transform: scale(1.1);
+  }
+  
+  #btnFlutuanteCarrinho img {
+    width: 40px;  /* tamanho do ícone */
+    height: 40px;
+    display: block;
+  }
+  
+  
+ /* Painel do carrinho */
+#painelFavoritos {
+    position: fixed;
+    right: -400px;
+    top: 0;
+    height: 100%;
+    width: 320px;
+    background: #fff;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.4s ease;
+    z-index: 999;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Botões estilo do produto.html */
+  .btn {
+    background: #28207B;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0e0a39;
+  }

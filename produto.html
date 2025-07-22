@@ -293,7 +293,7 @@ select:hover {
           </a>
         </div>
         <div id="btnFavoritos" onclick="abrirFavoritos()">
-          FAVORITOS ❤️
+          CARRINHO 🛒
         </div>
       </div>
     </div>
@@ -316,7 +316,7 @@ select:hover {
 
         <div style="margin-top: 10px;">
           <button class="btn" onclick="history.back()">← Voltar</button>
-          <button class="btn" id="btnFavoritar" onclick="adicionarFavorito()">🤍 Favoritar</button><br><br>
+          <button class="btn" id="btnFavoritar" onclick="adicionarFavorito()">🛒 Adicionar ao carrinho</button><br><br>
           <a id="whatsLink" target="_blank"><button class="btn">🛒Comprar no WhatsApp</button></a>
         </div>
       </div>
@@ -329,15 +329,28 @@ select:hover {
   </main>
 
   <div id="painelFavoritos">
-    <h2>Favoritos</h2>
+    <h2>Carrinho</h2>
     <div id="listaFavoritos"></div>
     <hr>
-    <div style="font-weight: bold; margin-top: 10px;">Total: <span id="totalFavoritos">R$ 0,00</span></div> <br> 
+  
+    <!-- Campo para cupom -->
+    <div style="margin-bottom: 15px;">
+      <label for="inputCupom" style="font-weight: 600;">Código do Cupom:</label><br/>
+      <input type="text" id="inputCupom" placeholder="Digite seu cupom" style="padding: 8px; width: 60%; border: 1px solid #ccc; border-radius: 6px;" />
+      <button class="btn" id="btnAplicarCupom" style="padding: 9px 16px; margin-left: 10px;">Aplicar</button>
+      <div id="msgCupom" style="color: red; margin-top: 6px; font-size: 14px;"></div>
+    </div>
+  
+    <div style="font-weight: bold; margin-top: 10px;">
+      Total: <span id="totalFavoritos">R$ 0,00</span>
+    </div>
+    <br> 
     <a id="whatsLinkFinal" target="_blank">
       <button class="btn">🛒 Comprar no WhatsApp</button>
     </a>
     <button class="btn" onclick="fecharFavoritos()" style="margin-top: 20px;">Fechar</button>
   </div>
+  
 
   <footer>
     &copy; Desenvolvido por OFF11

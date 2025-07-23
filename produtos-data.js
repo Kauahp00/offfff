@@ -3,109 +3,46 @@
 const produtos = {
     // CAMISAS BRASILEIRAS
     palmeiras: {
-      nome: "Camisa Palmeiras 2025",
+      nome: "Camisa Palmeiras 2024",
       descricao: "Camisa oficial do Palmeiras com escudo bordado e tecido dryfit.",
       preco: "R$ 119,99",
       imagem: "BRASIL/palmeiras.png",
       sugestoes: ["SP", "SCCP", "SANTOS"]
     },
     SP: {
-      nome: "Camisa São Paulo 2025",
+      nome: "Camisa São Paulo 2024",
       descricao: "Modelo oficial do São Paulo com acabamento premium.",
       preco: "R$ 119,99",
       imagem: "BRASIL/Sp.jpg",
       sugestoes: ["SCCP", "palmeiras", "FLA"]
     },
     SCCP: {
-      nome: "Camisa Corinthians 2025",
+      nome: "Camisa Corinthians 2024",
       descricao: "Design moderno do Timão com escudo emborrachado.",
       preco: "R$ 119,99",
       imagem: "BRASIL/SCCP.jpg",
       sugestoes: ["SP", "VASCO", "palmeiras"]
     },
     SANTOS: {
-      nome: "Camisa Santos 2025",
+      nome: "Camisa Santos 2024",
       descricao: "Camisa branca clássica com gola diferenciada.",
       preco: "R$ 119,99",
       imagem: "BRASIL/santos.jpeg",
       sugestoes: ["palmeiras", "SP", "FLA"]
     },
     FLA: {
-      nome: "Camisa Flamengo 2025",
+      nome: "Camisa Flamengo 2024",
       descricao: "Flamengo rubro-negro com tecido respirável.",
       preco: "R$ 119,99",
       imagem: "BRASIL/flamengo.jpeg",
       sugestoes: ["VASCO", "SANTOS", "SP"]
     },
     VASCO: {
-      nome: "Camisa Vasco 2025",
+      nome: "Camisa Vasco 2024",
       descricao: "Modelo oficial do Vasco com faixa diagonal clássica.",
       preco: "R$ 119,99",
       imagem: "BRASIL/vasco.jpg",
       sugestoes: ["FLA", "SCCP", "SP"]
-    },
-    CUIABA: {
-      nome: "Camisa Cuiabá 2025",
-      descricao: "Camisa verde e amarela do Dourado, edição especial.",
-      preco: "R$ 119,99",
-      imagem: "BRASIL/cuiaba.png",
-      sugestoes: ["FORTALEZA", "BAHIA", "INTER"]
-    },
-    FORTALEZA: {
-      nome: "Camisa Fortaleza 2025",
-      descricao: "Modelo tricolor do Leão do Pici com tecnologia dryfit.",
-      preco: "R$ 119,99",
-      imagem: "BRASIL/fortaleza.jpg",
-      sugestoes: ["CUIABA", "BAHIA", "CRUZEIRO"]
-    },
-    BAHIA: {
-      nome: "Camisa Bahia 2025",
-      descricao: "Tricolor baiano com detalhes em azul, branco e vermelho.",
-      preco: "R$ 119,99",
-      imagem: "BRASIL/bahia.jpg",
-      sugestoes: ["FORTALEZA", "GREMI", "INTER"]
-    },
-    INTER: {
-      nome: "Camisa Internacional 2025",
-      descricao: "Vermelha com listras verticais finas em branco.",
-      preco: "R$ 119,99",
-      imagem: "BRASIL/inter.jpg",
-      sugestoes: ["GREMI", "ATLETICO-MG", "CRUZEIRO"]
-    },
-    GREMI: {
-      nome: "Camisa Grêmio 2025",
-      descricao: "Azul, preta e branca com detalhes em listras horizontais.",
-      preco: "R$ 119,99",
-      imagem: "BRASIL/gremio.jpeg",
-      sugestoes: ["INTER", "FLUMINENSE", "ATLETICO-MG"]
-    },
-    CRUZEIRO: {
-      nome: "Camisa Cruzeiro 2025",
-      descricao: "Azul celeste com detalhes em branco, modelo premium.",
-      preco: "R$ 119,99",
-      imagem: "BRASIL/cruzeiro.jpeg",
-      sugestoes: ["ATLETICO-MG", "INTER", "FORTALEZA"]
-    },
-    "ATLETICO-MG": {
-      nome: "Camisa Atlético Mineiro 2025",
-      descricao: "Listrada em preto e branco com escudo bordado.",
-      preco: "R$ 119,99",
-      imagem: "BRASIL/atletico MG.jpg",
-      sugestoes: ["CRUZEIRO", "INTER", "FLUMINENSE"]
-    },
-    FLUMINENSE: {
-      nome: "Camisa Fluminense 2025",
-      descricao: "Tricolor grená, verde e branca com gola polo.",
-      preco: "R$ 119,99",
-      imagem: "BRASIL/fluminense.jpg",
-      sugestoes: ["FLA", "BOTAFOGO", "GREMI"]
-    },
-    BOTAFOGO: {
-      nome: "Camisa Botafogo 2025",
-      descricao: "Listrada em preto e branco com detalhes em dourado.",
-      preco: "R$ 119,99",
-      imagem: "BRASIL/botafogo.jpg",
-      sugestoes: ["FLUMINENSE", "FLA", "VASCO"]
     },
 
     // EUROPEUS
@@ -117,126 +54,140 @@ const produtos = {
       sugestoes: ["REAL", "CITY", "BAYERN"]
     },
     REAL: {
-      nome: "Camisa Real Madrid 2025",
+      nome: "Camisa Real Madrid 2024",
       descricao: "Modelo branco elegante com detalhes dourados.",
       preco: "R$ 119,99",
       imagem: "EUROPA/realMadrid.jpg",
       sugestoes: ["BARCELONA", "CHELSEA", "BAYERN"]
     },
     CITY: {
-      nome: "Camisa Manchester City 2025",
+      nome: "Camisa Manchester City 2024",
       descricao: "Celeste com detalhes em branco. Alta performance.",
       preco: "R$ 119,99",
       imagem: "EUROPA/city.jpeg",
       sugestoes: ["CHELSEA", "REAL", "BARCELONA"]
     },
     BAYERN: {
-      nome: "Camisa Bayern 2025",
+      nome: "Camisa Bayern 2024",
       descricao: "Vermelha com patrocínios e escudo bordado.",
       preco: "R$ 119,99",
       imagem: "EUROPA/bayern.jpeg",
       sugestoes: ["REAL", "CITY", "BARCELONA"]
     },
     CHELSEA: {
-      nome: "Camisa Chelsea 2025",
+      nome: "Camisa Chelsea 2024",
       descricao: "Modelo azul intenso da Premier League.",
       preco: "R$ 119,99",
       imagem: "EUROPA/chelsea.jpg",
       sugestoes: ["CITY", "REAL", "BARCELONA"]
     },
-    PSG: {
-      nome: "Camisa PSG 2025",
-      descricao: "Azul marinho com detalhes em vermelho e branco.",
-      preco: "R$ 119,99",
-      imagem: "EUROPA/psg.jpg",
-      sugestoes: ["MILAN", "INTER-MILAO", "BARCELONA"]
+
+    // SELEÇÕES
+    Brasil: {
+      nome: "Camisa Brasil 2024",
+      descricao: "Camisa canarinho oficial da seleção brasileira.",
+      preco: "R$ 149,99",
+      imagem: "BRASIL/brasil.jpeg",
+      sugestoes: ["Argentina", "França", "Portugal"]
     },
-    MILAN: {
-      nome: "Camisa Milan 2025",
-      descricao: "Listrada em vermelho e preto com detalhes em dourado.",
-      preco: "R$ 119,99",
-      imagem: "EUROPA/milan.jpeg",
-      sugestoes: ["INTER-MILAO", "MAN-UTD", "PSG"]
+    Portugal: {
+      nome: "Camisa Portugal 2024",
+      descricao: "Vermelha com detalhes em verde, modelo oficial.",
+      preco: "R$ 149,99",
+      imagem: "SELECAO/Portugal.jpeg",
+      sugestoes: ["Brasil", "Espanha", "França"]
     },
-    "INTER-MILAO": {
-      nome: "Camisa Inter de Milão 2025",
-      descricao: "Listrada em azul e preto com tecnologia dryfit.",
-      preco: "R$ 119,99",
-      imagem: "EUROPA/inter de milao.jpeg",
-      sugestoes: ["MILAN", "MAN-UTD", "PSG"]
+    Espanha: {
+      nome: "Camisa Espanha 2024",
+      descricao: "Vermelha com detalhes em amarelo, edição especial.",
+      preco: "R$ 149,99",
+      imagem: "SELECAO/espanha.jpeg",
+      sugestoes: ["Portugal", "Alemanha", "França"]
     },
-    "MAN-UTD": {
-      nome: "Camisa Manchester United 2025",
-      descricao: "Vermelha com detalhes em branco e dourado.",
-      preco: "R$ 119,99",
-      imagem: "EUROPA/united.jpg",
-      sugestoes: ["CITY", "CHELSEA", "ARSENAL"]
+    Alemanha: {
+      nome: "Camisa Alemanha 2024",
+      descricao: "Branca com detalhes em preto, modelo de torcedor.",
+      preco: "R$ 149,99",
+      imagem: "SELECAO/alemanha.jpeg",
+      sugestoes: ["França", "Inglaterra", "Espanha"]
     },
-    ARSENAL: {
-      nome: "Camisa Arsenal 2025",
-      descricao: "Vermelha com mangas brancas e detalhes em dourado.",
-      preco: "R$ 119,99",
-      imagem: "EUROPA/arsenal.jpeg",
-      sugestoes: ["MAN-UTD", "CHELSEA", "CITY"]
+    Inglaterra: {
+      nome: "Camisa Inglaterra 2024",
+      descricao: "Branca com detalhes em azul, gola polo.",
+      preco: "R$ 149,99",
+      imagem: "SELECAO/inglaterra.jpeg",
+      sugestoes: ["Alemanha", "França", "Portugal"]
+    },
+    França: {
+      nome: "Camisa França 2024",
+      descricao: "Azul-marinho com detalhes em dourado.",
+      preco: "R$ 149,99",
+      imagem: "SELECAO/franca.jpeg",
+      sugestoes: ["Brasil", "Portugal", "Inglaterra"]
     },
 
-    // RETRÔ (mantive os mesmos do exemplo anterior)
+    // RETRÔ
     MILAN: {
-      nome: "Camisa Retrô Milan",
+      nome: "Camisa Retrô Milan 1990",
       descricao: "Camisa histórica do Milan em edição retrô.",
       preco: "R$ 159,99",
       imagem: "RETRO/RetroMilan.jpg",
-      sugestoes: ["palmeiras2", "SCCP2", "HOLANDA"]
+      sugestoes: ["Ajax", "Brasilretro", "HOLANDA"]
     },
     palmeiras2: {
-      nome: "Camisa Retrô Palmeiras",
+      nome: "Camisa Retrô Palmeiras 1993",
       descricao: "Camisa vintage do Verdão, edição especial.",
       preco: "R$ 159,99",
       imagem: "RETRO/retroPalmeiras.jpg",
-      sugestoes: ["Milan", "SCCP2", "HOLANDA"]
+      sugestoes: ["SCCP2", "Santos2", "SP2"]
     },
     SCCP2: {
-      nome: "Camisa Retrô Corinthians",
+      nome: "Camisa Retrô Corinthians 1990",
       descricao: "Modelo retrô com gola polo e escudo antigo.",
       preco: "R$ 159,99",
       imagem: "RETRO/retroCorinthians.jpeg",
-      sugestoes: ["Milan", "palmeiras2", "HOLANDA"]
+      sugestoes: ["palmeiras2", "SP2", "Santos2"]
     },
     HOLANDA: {
-      nome: "Camisa Retrô Holanda",
+      nome: "Camisa Retrô Holanda 1988",
       descricao: "Icônica camisa laranja da seleção holandesa.",
       preco: "R$ 159,99",
       imagem: "RETRO/retroHolanda.jpg",
-      sugestoes: ["Milan", "SCCP2", "palmeiras2"]
+      sugestoes: ["MILAN", "Ajax", "Brasilretro"]
     },
-
-    // OUTROS (mantive os mesmos do exemplo anterior)
-    BOCA: {
-      nome: "Camisa Boca Juniors",
-      descricao: "Azul e amarela retrô com gola especial.",
+    Ajax: {
+      nome: "Camisa Retrô Ajax 1995",
+      descricao: "Camisa branca com faixa vermelha, time histórico.",
       preco: "R$ 159,99",
-      imagem: "OUTROS/boca.jpeg",
-      sugestoes: ["RIVER", "PENAROL", "MEXICO"]
+      imagem: "RETRO/retroAjax1995.jpg",
+      sugestoes: ["MILAN", "HOLANDA", "Brasilretro"]
     },
-    RIVER: {
-      nome: "Camisa River Plate",
-      descricao: "Faixa diagonal vermelha. Tradição sul-americana.",
-      preco: "R$ 159,99",
-      imagem: "OUTROS/river.jpg",
-      sugestoes: ["BOCA", "PENAROL", "MEXICO"]
+    Brasilretro: {
+      nome: "Camisa Retrô Brasil 2002",
+      descricao: "Camisa da conquista do pentacampeonato mundial.",
+      preco: "R$ 179,99",
+      imagem: "RETRO/retroBrasil2002.jpg",
+      sugestoes: ["France", "HOLANDA", "Ajax"]
     },
-    PENAROL: {
-      nome: "Camisa Peñarol",
-      descricao: "Listrada preta e amarela com design clássico.",
+    SP2: {
+      nome: "Camisa Retrô São Paulo 2006",
+      descricao: "Modelo comemorativo do tricampeonato mundial.",
       preco: "R$ 159,99",
-      imagem: "OUTROS/penarol.jpeg",
-      sugestoes: ["BOCA", "RIVER", "MEXICO"]
+      imagem: "RETRO/retroSP2006.jpg",
+      sugestoes: ["SCCP2", "palmeiras2", "Santos2"]
     },
-    MEXICO: {
-      nome: "Camisa Seleção México",
-      descricao: "Verde com detalhes modernos, edição limitada.",
+    Santos2: {
+      nome: "Camisa Retrô Santos 1998",
+      descricao: "Homenagem aos anos de ouro do clube.",
       preco: "R$ 159,99",
-      imagem: "OUTROS/mexico.jpg",
-      sugestoes: ["BOCA", "RIVER", "PENAROL"]
+      imagem: "RETRO/retroSantos98.jpg",
+      sugestoes: ["palmeiras2", "SCCP2", "SP2"]
+    },
+    France: {
+      nome: "Camisa Retrô França 2014",
+      descricao: "Modelo azul da seleção francesa, edição limitada.",
+      preco: "R$ 159,99",
+      imagem: "RETRO/retroFrance2014.jpeg",
+      sugestoes: ["Brasilretro", "HOLANDA", "Ajax"]
     }
 };

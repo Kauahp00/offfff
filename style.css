@@ -684,3 +684,106 @@ footer a:hover {
   .btn:hover {
     background-color: #0e0a39;
   }
+
+
+
+
+ /* No seu style.css */
+
+/* Ajuste para o contêiner de busca */
+.search-container {
+  position: relative; /* Mantém para posicionar as sugestões */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo */
+  align-items: center;
+  margin: 20px auto; /* Margem superior/inferior e centraliza horizontalmente */
+  width: 90%; /* Ocupa 90% da largura da tela */
+  max-width: 1000px; /* Limita a largura máxima para telas muito grandes, ajuste se necessário */
+  gap: 10px; /* Espaçamento entre o input e o botão */
+  padding: 0 16px; /* Adiciona padding lateral para não colar nas bordas em telas menores */
+  box-sizing: border-box; /* Garante que padding não aumente a largura total */
+}
+
+#searchInput {
+  flex-grow: 1; /* Faz o input ocupar o espaço disponível */
+  padding: 12px 18px; /* Aumenta o padding para deixá-lo maior */
+  border: 2px solid #28207B;
+  border-radius: 8px;
+  font-size: 18px; /* Aumenta o tamanho da fonte */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+  border-color: #0056b3;
+}
+
+#searchButton {
+  padding: 12px 25px; /* Aumenta o padding para o botão */
+  font-size: 16px; /* Mantém ou ajusta o tamanho da fonte do botão */
+  background-color: #28207B;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+  background-color: #1e185e; /* Um tom mais escuro no hover */
+}
+
+/* Estilo para o contêiner das sugestões */
+.suggestions-container {
+  position: absolute;
+  top: 100%; /* Abaixo do input */
+  /* Ajusta left e right para alinhar com o input */
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+}
+
+/* Estilo para cada item de sugestão */
+.suggestion-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Media Queries para responsividade (se necessário) */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column; /* Empilha input e botão em telas menores */
+    align-items: stretch; /* Estica os itens para a largura total */
+  }
+
+  #searchInput {
+    margin-bottom: 10px; /* Espaçamento entre input e botão empilhados */
+  }
+
+  #searchButton {
+    width: 100%; /* Botão ocupa a largura total */
+  }
+
+  .suggestions-container {
+    /* Ajusta a posição para telas menores se o layout mudar */
+    left: 0;
+    right: 0;
+    width: 100%; /* Ocupa a largura total do search-container */
+  }
+}
+

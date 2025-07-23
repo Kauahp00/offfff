@@ -63,6 +63,13 @@
         </div>
       </div>
     </section>
+     <!-- Dentro do seu <body>, preferencialmente no <header> ou logo abaixo dele -->
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Pesquisar camisas..." autocomplete="off" />
+  <button id="searchButton" class="btn">🔍 Buscar</button>
+  <!-- NOVO: Contêiner para as sugestões -->
+  <div id="suggestionsContainer" class="suggestions-container"></div>
+</div>
   </header>
 
   <section class="ctt">
@@ -347,7 +354,8 @@
       });
     }
   </script>
-
+  
+<script src="index.js"></script>
 <script src="produtos-data.js"></script>
 <script src="produto-script.js"></script>
   

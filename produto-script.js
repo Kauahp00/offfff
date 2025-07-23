@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Link para WhatsApp do produto individual
     whatsEl.href = `https://wa.me/5515996128644?text=${encodeURIComponent(
-      `Olá, quero comprar: ${produto.nome} (${produto.preco})\nTamanho: ${selectTamanho.value}\n\nPoderia me informar sobre pagamento e entrega?`
+      `Olá, gostaria de tirar algumas dúvidas sobre o produto: ${produto.nome} (${produto.preco})\nTamanho: ${selectTamanho.value}\n\nPode me ajudar?`
     )}`;
 
     // Atualiza botão do carrinho

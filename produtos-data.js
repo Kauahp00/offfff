@@ -183,7 +183,7 @@ const produtos = {
     nome: "Camisa Brasil 2025",
     descricao: "Camisa oficial da Seleção Brasileira, amarela canarinho.",
     preco: "R$ 139,99",
-    imagem: "https://res.cloudinary.com/dguyvksoz/image/upload/v1753288554/brasil.jpeg",
+    imagem: "https://res.cloudinary.com/dguyvksoz/image/upload/v1753289638/brasil_pxjqse.jpg",
     sugestoes: ["Portugal", "Espanha", "França"]
   },
   Portugal: {

@@ -236,7 +236,7 @@ footer {
     align-content: center;
     font-weight: bold;
     font-size: 12px;
-    height: 30px;
+    height: 100%;
     width: 100%;
     bottom: 0;
 }
@@ -787,3 +787,202 @@ footer a:hover {
   }
 }
 
+/* Novo Footer Profissional */
+.main-footer {
+    background: linear-gradient(135deg, #000000, #28207B); /* Fundo mais escuro e profissional */
+    color: #ffffff;
+    padding: 40px 20px 20px; /* Mais padding para espaço */
+    font-family: "Raleway", sans-serif;
+    border-top: 5px solid #6A1B9A; /* Linha superior para destaque */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as seções quebrem a linha em telas menores */
+    justify-content: space-around; /* Espaça as colunas */
+    max-width: 1200px; /* Largura máxima para o conteúdo do footer */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    gap: 30px; /* Espaçamento entre as colunas */
+}
+
+.footer-section {
+    flex: 1; /* Permite que as seções cresçam e encolham */
+    min-width: 250px; /* Largura mínima para cada seção */
+    margin-bottom: 20px; /* Margem inferior para responsividade */
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #6A1B9A; /* Sublinhado para títulos */
+    padding-bottom: 8px;
+    display: inline-block; /* Para o sublinhado se ajustar ao texto */
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal; /* Remove bold para links de navegação */
+    text-transform: none; /* Remove uppercase para links de navegação */
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #6A1B9A; /* Cor de destaque no hover */
+}
+
+/* Seção de Contato */
+.footer-section.about .contact-info {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.footer-section.about .contact-info i {
+    margin-right: 8px;
+    color: #6A1B9A; /* Cor para os ícones de contato */
+}
+
+.footer-section.about .contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section.about .contact-info a:hover {
+    color: #6A1B9A;
+}
+
+
+
+/* Seção de Redes Sociais */
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+    justify-content: center;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 24px; /* Tamanho maior para os ícones */
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #6A1B9A; /* Cor de destaque no hover */
+    transform: translateY(-3px); /* Efeito de "levantar" */
+}
+
+/* Seção de Formas de Pagamento */
+.payment-methods {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaçamento entre os ícones de pagamento */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.payment-icon {
+    height: 30px; /* Tamanho padrão para os ícones de pagamento */
+    transition: filter 0.3s ease;
+    align-items: center;
+}
+
+.payment-icon.pix-icon {
+    height: 25px; /* Ajuste para o ícone do PIX se for diferente */
+}
+
+
+
+.payment-info {
+    width: 100%; /* Ocupa a largura total para a informação de parcelamento */
+    font-size: 13px;
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+/* Rodapé Inferior (Copyright) */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória sutil */
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+/* Responsividade do Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Empilha as seções verticalmente */
+        align-items: center; /* Centraliza as seções */
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: 90%; /* Ocupa quase toda a largura em mobile */
+        margin-bottom: 30px;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 10px;
+    }
+
+    .social-links {
+        justify-content: center; /* Centraliza os ícones sociais */
+    }
+
+    .payment-methods {
+        justify-content: center; /* Centraliza os ícones de pagamento */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-footer {
+        padding: 30px 15px 15px;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+    }
+
+    .footer-section p,
+    .footer-section ul li a,
+    .payment-info {
+        font-size: 13px;
+    }
+
+    .social-links a {
+        font-size: 20px;
+    }
+
+    .payment-icon {
+        height: 25px;
+    }
+}

@@ -226,63 +226,63 @@ const produtos = {
   MILAN: {
     nome: "Camisa Retrô Milan 1990",
     descricao: "Camisa clássica do Milan, edição retrô dos anos 90.",
-    preco: "R$ 159,99",
+    preco: "R$ 169,99",
     imagem: "https://res.cloudinary.com/dguyvksoz/image/upload/v1753286384/RetroMilan_h66bow.jpg",
     sugestoes: ["Ajax", "Brasilretro", "HOLANDA"]
   },
   palmeiras2: {
     nome: "Camisa Retrô Palmeiras 1993",
     descricao: "Camisa histórica do Palmeiras, modelo anos 90.",
-    preco: "R$ 159,99",
+    preco: "R$ 169,99",
     imagem: "https://res.cloudinary.com/dguyvksoz/image/upload/v1753286384/retroPalmeiras_l9mpku.jpg",
     sugestoes: ["SCCP2", "Santos2", "SP2"]
   },
   SCCP2: {
     nome: "Camisa Retrô Corinthians 1990",
     descricao: "Camisa vintage do Corinthians, estilo anos 90.",
-    preco: "R$ 159,99",
+    preco: "R$ 169,99",
     imagem: "https://res.cloudinary.com/dguyvksoz/image/upload/v1753286382/retroCorinthians_nyoqcp.jpg",
     sugestoes: ["palmeiras2", "SP2", "Santos2"]
   },
   HOLANDA: {
     nome: "Camisa Retrô Holanda 1988",
     descricao: "Camisa icônica da Seleção Holandesa, edição retrô.",
-    preco: "R$ 159,99",
+    preco: "R$ 169,99",
     imagem: "https://res.cloudinary.com/dguyvksoz/image/upload/v1753286381/retroHolanda_oua9iq.jpg",
     sugestoes: ["MILAN", "Ajax", "Brasilretro"]
   },
   Ajax: {
     nome: "Camisa Retrô Ajax 1995",
     descricao: "Camisa histórica do Ajax, modelo dos anos 90.",
-    preco: "R$ 159,99",
+    preco: "R$ 169,99",
     imagem: "https://res.cloudinary.com/dguyvksoz/image/upload/v1753286380/retroAjax1995_h9ecap.jpg",
     sugestoes: ["MILAN", "HOLANDA", "Brasilretro"]
   },
   Brasilretro: {
     nome: "Camisa Retrô Brasil 2002",
     descricao: "Camisa da Seleção Brasileira, pentacampeã mundial.",
-    preco: "R$ 159,99",
+    preco: "R$ 169,99",
     imagem: "https://res.cloudinary.com/dguyvksoz/image/upload/v1753286382/retroBrasil2002_igunk3.jpg",
     sugestoes: ["France", "HOLANDA", "Ajax"]
   },
   SP2: {
     nome: "Camisa Retrô São Paulo 2006",
     descricao: "Camisa comemorativa do São Paulo, tricampeão mundial.",
-    preco: "R$ 159,99",
+    preco: "R$ 169,99",
     imagem: "https://res.cloudinary.com/dguyvksoz/image/upload/v1753286382/retroSP2006_cxwyb2.jpg",
     sugestoes: ["SCCP2", "palmeiras2", "Santos2"]
   },
   Santos2: {
     nome: "Camisa Retrô Santos 1998",
     descricao: "Camisa vintage do Santos, homenagem aos anos 90.",
-    preco: "R$ 159,99",
+    preco: "R$ 169,99",
     imagem: "https://res.cloudinary.com/dguyvksoz/image/upload/v1753286380/retroSantos98_lobpzl.jpg",
     sugestoes: ["palmeiras2", "SCCP2", "SP2"]
   },
   France: {
     nome: "Camisa Retrô França 2014",
     descricao: "Camisa retrô da Seleção Francesa, modelo 2014.",
-    preco: "R$ 159,99",
+    preco: "R$ 169,99",
     imagem: "https://res.cloudinary.com/dguyvksoz/image/upload/v1753286383/retroFrance2014_qq3zwh.jpg",
     sugestoes: ["Brasilretro", "HOLANDA", "Ajax"]
   }

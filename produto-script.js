@@ -23,7 +23,8 @@ let descontoAtual = 0;
 
 // Cupons válidos (com desconto percentual)
 const cuponsValidos = {
-  "OFF11": 0.10,    // 10% de desconto
+  "OFF11": 0.10,
+  "TIKTOK27": 20,// 10% de desconto
   
 };
 
